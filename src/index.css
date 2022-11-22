@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;300;400;600&display=swap');
+
+h1,
+h2,
+p,
+a,
+button {
+  font-family: 'Bai Jamjuree', sans-serif;
+}
+
+@layer base {
+
+  p {
+    @apply text-[18px] text-grayishBlue text-center mt-6
+  }
+
+  h1 {
+    @apply text-4xl text-darkGrayishBlue font-semibold text-center
+  }
+
+  h2 {
+    @apply text-[1.67rem] text-darkGrayishBlue text-center font-bold
+  }
+}
