@@ -16,8 +16,8 @@ module.exports = {
       grayishBlue: 'hsl(201, 11%, 66%)',
     },
     boxShadow: {
-      '2xl': '0px 3px 0px 1px rgb(19, 82, 93, 0.6), 0px 3px 14px 3px hsl(171, 66%, 24%, 50%)',
-      '3xl': '0px 3px 0px 1px rgb(24, 86, 140);, 0px 3px 14px 3px rgba(64, 76, 170, 0.7)',
+      '2xl': '0px 3px 0px 0px rgba(37,154,134, 1), 0px 3px 7px 3px rgba(19, 82, 93, 0.4)',
+      '3xl': '0px 3px 0px 0px rgb(84, 105, 229, 1), 0px 3px 7px 3px rgba(64, 76, 170, 0.4)',
     },
     extend: {
       backgroundImage: {

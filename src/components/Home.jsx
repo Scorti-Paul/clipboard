@@ -18,8 +18,9 @@ import Button from './Button'
 
 const Home = () => {
 
-  const btnBGColorCyan = ' bg-strongCyan shadow-2xl'
-  const btnBGColorBlue = 'bg-lightBlue shadow-3xl'
+  const btnBGColorCyan = ' bg-strongCyan shadow-2xl hover:bg-strongCyan/80'
+  const btnBGColorBlue = 'bg-lightBlue hover:bg-lightBlue/80 shadow-3xl'
+
   return (
     <div>
       <header className={window.innerWidth <= 375 ? `w-full bg-heroMobileBgImage bg-cover bg-no-repeat bg-center pb-[12rem]` : `w-full bg-heroDesktopBgImage bg-cover bg-no-repeat bg-center pb-[10rem]`}>
@@ -29,7 +30,7 @@ const Home = () => {
           </div>
           <div className='md:flex md:flex-col md:items-center'>
             <h1>A history of everything you copy</h1>
-            <p className='md:w-[68%] text-center'>Clipboard allows you to track and organize everything you
+            <p className='md:max-w-[38rem] text-center'>Clipboard allows you to track and organize everything you
               copy. Instantly access your clipboard on all your devices.
             </p>
           </div>
@@ -83,22 +84,22 @@ const Home = () => {
                 <h2 className='text-[2rem] leading-10 mb-[-0.3rem]'>Supercharge your workflow</h2>
                 <p>We’ve got the tools to boost your productivity.</p>
               </div>
-              <div className='flex flex-col md:flex-row items-center md:justify-center md:items-center md:gap-9'>
+              <div className='flex flex-col items-center md:flex-row md:justify-center md:items-center md:gap-9'>
                 <div className='pt-10 pb-6 flex flex-col items-center '>
                   <img className='w-3/8 mb-10' src={iconBlacklist} alt="" />
                   <h2>Create blacklists</h2>
-                  <p>Ensure sensitive information never makes its way to your clipboard by excluding certain sources.</p>
+                  <p className='md:max-w-[24rem]'>Ensure sensitive information never makes its way to your clipboard by excluding certain sources.</p>
                 </div>
                 <div className='pt-10 pb-6 flex flex-col items-center '>
                   <img className='w-3/8 mb-10' src={iconText} alt="" />
                   <h2>Plain text snippets</h2>
-                  <p>Remove unwanted formatting from copied text for a consistent look.
+                  <p className='md:max-w-[24rem]'>Remove unwanted formatting from copied text for a consistent look.
                   </p>
                 </div>
-                <div className='pt-10  flex flex-col items-center '>
+                <div className='pt-10 md:pb-6  flex flex-col items-center '>
                   <img className='w-3/8 mb-10' src={iconPreview} alt="" />
                   <h2>Sneak preview</h2>
-                  <p>Quick preview of all snippets on your Clipboard for easy access.
+                  <p className='md:max-w-[24rem]'>Quick preview of all snippets on your Clipboard for easy access.
                   </p>
                 </div>
               </div>
@@ -107,7 +108,7 @@ const Home = () => {
         </section>
 
 
-        <section className='pt-[8rem] px-8 md:px-[6rem] flex flex-col items-center justify-center  md:flex-row md:gap-12 '>
+        <section className='pt-[8rem] px-8 md:px-[6rem] lg:px-0 lg:gap-28 flex flex-col items-center justify-center  md:flex-row md:gap-12 '>
           <div className='pb-16'>
             <img src={google} alt="google logo" />
           </div>
@@ -128,7 +129,7 @@ const Home = () => {
 
         <section className='pt-[8rem] px-9 md:flex md:flex-col md:items-center'>
           <h2 className='px-2'>Clipboard for iOS and Mac OS</h2>
-          <p className='pb-16 md:w-[68%] '>Available for free on the App Store. Download for Mac or iOS, sync with iCloud
+          <p className='pb-16 md:max-w-[44rem]'>Available for free on the App Store. Download for Mac or iOS, sync with iCloud
             and you’re ready to start adding to your clipboard. </p>
           <div className='flex flex-col md:flex-row md:justify-center gap-8 mt-12'>
             <Button textColor={btnBGColorCyan}>Download for iOS</Button>
