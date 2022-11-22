@@ -23,7 +23,7 @@ const Home = () => {
 
   return (
     <div>
-      <header className={window.innerWidth <= 375 ? `w-full bg-heroMobileBgImage bg-cover bg-no-repeat bg-center pb-[12rem]` : `w-full bg-heroDesktopBgImage bg-cover bg-no-repeat bg-center pb-[10rem]`}>
+      <header className={window.innerWidth <= 785 ? `w-full bg-heroMobileBgImage bg-cover bg-no-repeat bg-center pb-[12rem]` : `w-full bg-heroDesktopBgImage bg-cover bg-no-repeat bg-center pb-[10rem]`}>
         <div className='pt-[9rem] px-8'>
           <div className='flex justify-center mb-16'>
             <img className='w-2/5 md:w-[7rem]' src={logo} alt="site logo" />
@@ -50,7 +50,7 @@ const Home = () => {
             </p>
           </div>
           <div className='pt-[5rem] md:flex md:items-center md:gap-6'>
-            <div className='md:ml-[-5rem] w-[70%]'>
+            <div className='md:ml-[-5rem] flex justify-center md:w-[70%]'>
               <img className='md:w-full' src={computer} alt="" />
             </div>
             <div className='pt-16 md:pt-0 md:w-[30%]'>
@@ -76,7 +76,7 @@ const Home = () => {
           <p className='md:w-[68%] text-lg text-center'>Whether you’re on the go, or at your computer, you can access all your Clipboard
             snippets in a few simple clicks.</p>
           <div className='pt-[5rem]'>
-            <div className='md:flex md:justify-center'>
+            <div className='flex justify-center '>
               <img className='w-3/4' src={devices} alt="" />
             </div>
             <div className='pt-[8rem] '>
